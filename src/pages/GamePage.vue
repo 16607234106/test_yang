@@ -1,9 +1,5 @@
 <template>
   <div id="gamePage">
-    <a-row align="space-between">
-      <a-button style="margin-bottom: 8px" @click="doBack"> 返回</a-button>
-      <a-button>块数：{{ clearBlockNum }} / {{ totalBlockNum }}</a-button>
-    </a-row> 
         <audio controls ref="audio" class="aud">
             <source src="https://article.zzccs.cc/zhtttu/1.mp3" />
       </audio>
@@ -72,10 +68,10 @@
     </a-row>
     <!-- 技能 -->
     <div class="skill-board">
-      <a-space>
+      <a-space class="aclass1">
         <!-- <a-button size="small" @click="doRevert">撤回</a-button> -->
-        <a-button size="small" @click="doRemove">移出</a-button>
-        <a-button size="small" @click="doShuffle">洗牌</a-button>
+        <a-button class="aclass2" size="small" @click="doRemove">移出道具</a-button>
+        <a-button class="aclass2" size="small" @click="doShuffle">洗牌道具</a-button>
         <!-- <a-button size="small" @click="doBroke">破坏</a-button> -->
         <!-- <a-button size="small" @click="doHolyLight">圣光</a-button>
         <a-button size="small" @click="doSeeRandom">透视</a-button> -->
