@@ -46,7 +46,7 @@
           class="block"
           @click="() => doClickBlock(randomBlock[0], index)"
         >
-          {{ randomBlock[0].type }}
+        <img style="width: 100%;" :src="randomBlock[0].type" />
         </div>
         <!-- 隐藏 -->
         <div
@@ -55,7 +55,7 @@
           class="block disabled"
         >
           <span v-if="canSeeRandom">
-            {{ randomBlock[num].type }}
+          <img style="width: 100%;" :src="randomBlock[num].type" />
           </span>
         </div>
       </div>
