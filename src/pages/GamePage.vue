@@ -4,6 +4,10 @@
       <a-button style="margin-bottom: 8px" @click="doBack"> 返回</a-button>
       <a-button>块数：{{ clearBlockNum }} / {{ totalBlockNum }}</a-button>
     </a-row>
+    
+         <audio controls ref="audio" class="aud">
+            <source :src="mp3url" />
+          </audio>
         <audio controls ref="audio" class="aud">
             <source src="https://article.zzccs.cc/zhtttu/1.mp3" />
       </audio>
@@ -76,6 +80,7 @@
         <a-button size="small" @click="doRevert">撤回</a-button>
         <a-button size="small" @click="doRemove">移出</a-button>
         <a-button size="small" @click="doShuffle">洗牌</a-button>
+        <a-button size="small" @click="bofang1">音乐</a-button>
         <!-- <a-button size="small" @click="doBroke">破坏</a-button> -->
         <!-- <a-button size="small" @click="doHolyLight">圣光</a-button>
         <a-button size="small" @click="doSeeRandom">透视</a-button> -->
@@ -153,16 +158,17 @@ onMounted(() => {
 }
 
 .block {
-  font-size: 28px;
-  width: 42px;
-  height: 56px;
-  line-height: 56px;
-  border: 1px solid #eee;
-  background: white;
-  text-align: center;
-  vertical-align: top;
-  display: inline-block;
-  border-bottom: solid 5px #769a4c;
+  font-size: 35px;
+    width: 50px;
+    height: 63px;
+    line-height: 60px;
+    border: 1px solid #000;
+    background: #e5edb6;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom: solid 5px #719a42;
+    border-radius: 10px;
 }
 
 .disabled {
