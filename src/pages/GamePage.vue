@@ -29,7 +29,7 @@
             }"
             @click="() => doClickBlock(block)"
           >
-            {{ block.type }}
+          <img style="width: 100%;" :src="block.type" />
           </div>
         </div>
       </div>
