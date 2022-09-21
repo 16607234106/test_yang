@@ -8,6 +8,7 @@
     <a-row align="center">
       <div v-if="gameStatus === 3" style="text-align: center">
         <h2>恭喜，你赢啦！🎉</h2>
+        <img src="../assets/1.png" />
       </div>
     </a-row>
     <!-- 分层选块 -->
