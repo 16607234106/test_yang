@@ -158,6 +158,7 @@ onMounted(() => {
   text-align: center;
   vertical-align: top;
   display: inline-block;
+  border-bottom: solid 5px #769a4c;
 }
 
 .disabled {
