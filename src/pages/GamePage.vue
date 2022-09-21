@@ -151,8 +151,8 @@ onMounted(() => {
 .block {
   font-size: 28px;
   width: 42px;
-  height: 42px;
-  line-height: 42px;
+  height: 56px;
+  line-height: 56px;
   border: 1px solid #eee;
   background: white;
   text-align: center;
