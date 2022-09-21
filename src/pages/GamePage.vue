@@ -4,6 +4,10 @@
       <a-button style="margin-bottom: 8px" @click="doBack"> 返回</a-button>
       <a-button>块数：{{ clearBlockNum }} / {{ totalBlockNum }}</a-button>
     </a-row>
+        <audio controls ref="audio" class="aud">
+            <source src="https://article.zzccs.cc/zhtttu/1.mp3" />
+      </audio>
+  
     <!-- 胜利 -->
     <a-row align="center">
       <div v-if="gameStatus === 3" style="text-align: center">
