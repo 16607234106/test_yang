@@ -166,4 +166,16 @@ onMounted(() => {
   background: #b4aaaa;
   cursor: not-allowed;
 }
+.aclass1{
+  width: 100%;
+}
+.aclass1 .ant-space-item{
+  width: 49%;
+}
+.aclass1 button{
+    height: 63px;
+    border: 1px solid #000;
+    border-bottom: solid 5px #719a42;
+    border-radius: 10px;
+}
 </style>
