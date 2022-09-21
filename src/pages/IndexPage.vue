@@ -1,6 +1,5 @@
 <template>
   <div id="indexPage">
-    <h1>低配版羊了个羊</h1>
     <a-button
       block
       style="margin-bottom: 16px"
@@ -41,7 +40,7 @@
       style="margin-bottom: 16px"
       @click="toGamePage(yangGameConfig)"
     >
-      无尽关
+      真`羊了个羊
     </a-button>
     <!-- <a-button block style="margin-bottom: 16px" @click="() => toGamePage()">
       自定义 🔥
