@@ -167,7 +167,7 @@ onMounted(() => {
 }
 
 .disabled {
-  background: grey;
+  background: #b4aaaa;
   cursor: not-allowed;
 }
 </style>
