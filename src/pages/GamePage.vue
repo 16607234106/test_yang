@@ -28,7 +28,7 @@
             }"
             @click="() => doClickBlock(block)"
           >
-            {{ block.type }}
+                      <img alt="" :src="block.type" />
           </div>
         </div>
       </div>
