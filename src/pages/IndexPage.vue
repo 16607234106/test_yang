@@ -1,6 +1,6 @@
 <template>
   <div id="indexPage">
-    <h1>🐟 鱼了个鱼</h1>
+    <!-- <h1>阴了又阴</h1> -->
     <div style="margin-bottom: 16px">低配版羊了个羊小游戏，仅供消遣</div>
     <a-button
       block
@@ -44,24 +44,9 @@
     >
       羊了个羊模式
     </a-button>
-    <a-button block style="margin-bottom: 16px" @click="() => toGamePage()">
+    <!-- <a-button block style="margin-bottom: 16px" @click="() => toGamePage()">
       自定义 🔥
-    </a-button>
-    <my-ad />
-    <div class="footer">
-      鱼了个鱼 ©2022 by
-      <a href="https://github.com/liyupi" target="_blank" style="color: #fff">
-        程序员鱼皮
-      </a>
-      |
-      <a
-        href="https://github.com/liyupi/yulegeyu"
-        target="_blank"
-        style="color: #fff"
-      >
-        代码开源
-      </a>
-    </div>
+    </a-button> -->
   </div>
 </template>
 
