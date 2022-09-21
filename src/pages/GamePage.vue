@@ -8,8 +8,6 @@
     <a-row align="center">
       <div v-if="gameStatus === 3" style="text-align: center">
         <h2>恭喜，你赢啦！🎉</h2>
-        <img alt="程序员鱼皮" src="../assets/kunkun.png" />
-        <my-ad style="margin-top: 16px" />
       </div>
     </a-row>
     <!-- 分层选块 -->
@@ -30,7 +28,7 @@
             }"
             @click="() => doClickBlock(block)"
           >
-            {{ block.type }}
+            <img alt="" src="{{ block.type }}" />
           </div>
         </div>
       </div>
@@ -74,8 +72,8 @@
         <a-button size="small" @click="doRevert">撤回</a-button>
         <a-button size="small" @click="doRemove">移出</a-button>
         <a-button size="small" @click="doShuffle">洗牌</a-button>
-        <a-button size="small" @click="doBroke">破坏</a-button>
-        <a-button size="small" @click="doHolyLight">圣光</a-button>
+        <!-- <a-button size="small" @click="doBroke">破坏</a-button> -->
+        <!-- <a-button size="small" @click="doHolyLight">圣光</a-button> -->
         <a-button size="small" @click="doSeeRandom">透视</a-button>
       </a-space>
     </div>
