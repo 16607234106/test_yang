@@ -7,8 +7,7 @@
     <!-- 胜利 -->
     <a-row align="center">
       <div v-if="gameStatus === 3" style="text-align: center">
-        <h2>恭喜，你赢啦！🎉</h2>
-        <img src="../assets/1.png" />
+        <h2>恭喜你加入羊群</h2>
       </div>
     </a-row>
     <!-- 分层选块 -->
@@ -29,7 +28,7 @@
             }"
             @click="() => doClickBlock(block)"
           >
-          <img style="width: 100%;" :src="block.type" />
+          {{ block.type }}
           </div>
         </div>
       </div>
