@@ -28,7 +28,7 @@
             }"
             @click="() => doClickBlock(block)"
           >
-                      <img style="width: 100%;" :src="block.type" />
+            {{ block.type }}
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
           class="block"
           @click="() => doClickBlock(randomBlock[0], index)"
         >
-        <img style="width: 100%;" :src="randomBlock[0].type" />
+          {{ randomBlock[0].type }}
         </div>
         <!-- 隐藏 -->
         <div
@@ -55,7 +55,7 @@
           class="block disabled"
         >
           <span v-if="canSeeRandom">
-          <img style="width: 100%;" :src="randomBlock[num].type" />
+            {{ randomBlock[num].type }}
           </span>
         </div>
       </div>
@@ -73,8 +73,8 @@
         <a-button size="small" @click="doRemove">移出</a-button>
         <a-button size="small" @click="doShuffle">洗牌</a-button>
         <!-- <a-button size="small" @click="doBroke">破坏</a-button> -->
-        <!-- <a-button size="small" @click="doHolyLight">圣光</a-button> -->
-        <a-button size="small" @click="doSeeRandom">透视</a-button>
+        <!-- <a-button size="small" @click="doHolyLight">圣光</a-button>
+        <a-button size="small" @click="doSeeRandom">透视</a-button> -->
       </a-space>
     </div>
   </div>
