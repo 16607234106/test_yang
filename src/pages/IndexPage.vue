@@ -1,48 +1,47 @@
 <template>
   <div id="indexPage">
-    <!-- <h1>阴了又阴</h1> -->
-    <div style="margin-bottom: 16px">低配版羊了个羊小游戏，仅供消遣</div>
+    <h1>低配版羊了个羊</h1>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(easyGameConfig)"
     >
-      简单模式
+      第一关
     </a-button>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(middleGameConfig)"
     >
-      中等模式
+      第二关
     </a-button>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(hardGameConfig)"
     >
-      困难模式
+      第三关
     </a-button>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(lunaticGameConfig)"
     >
-      地狱模式
+      第四关
     </a-button>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(skyGameConfig)"
     >
-      天域模式
+      第五关
     </a-button>
     <a-button
       block
       style="margin-bottom: 16px"
       @click="toGamePage(yangGameConfig)"
     >
-      羊了个羊模式
+      无尽关
     </a-button>
     <!-- <a-button block style="margin-bottom: 16px" @click="() => toGamePage()">
       自定义 🔥
